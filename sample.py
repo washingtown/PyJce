@@ -1,10 +1,11 @@
 from PyJce import JceInputStream,JceStruct
 
-f = open('cover_detail_waterfall鬼吹灯', 'rb')
+f = open('datas', 'rb')
 stream = JceInputStream(f.read())
 s=JceStruct()
 s.read_from(stream)
-ff = open('cover_detail_waterfall鬼吹灯.txt', 'w')
+ff = open('datas.txt', 'w')
+print(s.to_json())
 ff.write(s.to_json())
 f.close()
 ff.close()
