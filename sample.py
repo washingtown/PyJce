@@ -1,4 +1,4 @@
-from PyJce import JceInputStream,JceStruct
+from pyjce import JceInputStream,JceStruct
 
 f = open('datas', 'rb')
 stream = JceInputStream(f.read())

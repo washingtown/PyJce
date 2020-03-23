@@ -1,7 +1,7 @@
 from typing import Tuple, List
-from PyJce.bytebuffer import ByteBuffer
-from PyJce.exception import JceDecodeException
-from PyJce.struct import JceStruct, JceStructStatics
+from pyjce.bytebuffer import ByteBuffer
+from pyjce.exception import JceDecodeException
+from pyjce.struct import JceStruct, JceStructStatics
 
 class HeadData(object):
     tag: int=0

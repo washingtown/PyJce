@@ -37,7 +37,7 @@ class JceStruct(object):
             if isinstance(value, bytes) and len(value) > 0:
                 try:
                     s = JceStruct()
-                    from PyJce.stream import JceInputStream
+                    from pyjce.stream import JceInputStream
                     s.read_from(JceInputStream(value))
                     self.data[tag] = s
                 except:
